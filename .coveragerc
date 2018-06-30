@@ -1,0 +1,15 @@
+[run]
+include =
+    __init__.py
+    test/*
+
+omit =
+    # omit the test folder
+    *mycroft-core/*
+    *.venv*
+
+[report]
+omit =
+    */python?.?/*
+    *mycroft-core/*
+    */site-packages/*
