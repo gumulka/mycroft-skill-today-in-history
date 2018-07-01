@@ -1,7 +1,4 @@
 {
   "utterance": "this day in history",
-  "intent_type": "RandomEventIntent",
-  "intent": {
-    "RandomEventKeyword": "this day in history"
-  }
+  "expected_dialog": "event"
 }
