@@ -1,0 +1,8 @@
+
+{
+  "utterance": "was ist heute in der Geschichte passiert",
+  "intent_type": "RandomEventIntent",
+  "intent": {
+    "RandomEventKeyword": "was ist heute in der Geschichte passiert"
+  }
+}
