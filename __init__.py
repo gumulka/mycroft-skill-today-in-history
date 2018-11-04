@@ -4,6 +4,7 @@ from adapt.intent import IntentBuilder
 from mycroft.skills.core import MycroftSkill
 from mycroft.util.log import getLogger
 import requests
+import random
 
 __author__ = 'brihopki'
 LOGGER = getLogger(__name__)
@@ -27,7 +28,8 @@ class TodayHistorySkill(MycroftSkill):
         json_output = r.json()
         output = json_output['data']
         events = output['Events']
-        self.speak_dialog('event', data={'event': events[0]['text']})
+        random_event = random.choice(events)
+        self.speak_dialog('event', data={'event': random_event['text']})
 
     def stop(self):
         pass
